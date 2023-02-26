@@ -117,20 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"javascript/search.js":[function(require,module,exports) {
-var searchButton = document.querySelector(".search-button");
-var searchInput = document.querySelector(".search-input");
-searchButton.addEventListener("click", function () {
-  searchInput.classList.toggle("active");
-});
-document.addEventListener("click", function (event) {
-  var isClickInside = searchButton.contains(event.target) || searchInput.contains(event.target);
-
-  if (!isClickInside) {
-    searchInput.classList.remove("active");
-  }
-});
-},{}],"javascript/menuMobile.js":[function(require,module,exports) {
+})({"javascript/menuMobile.js":[function(require,module,exports) {
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -179,10 +166,8 @@ try {
 },{}],"javascript/index.js":[function(require,module,exports) {
 "use strict";
 
-require("./search");
-
 require("./menuMobile");
-},{"./search":"javascript/search.js","./menuMobile":"javascript/menuMobile.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./menuMobile":"javascript/menuMobile.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -254,7 +239,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"C:\\MAMP\\htdocs\\pizza\\assets\\img\\background.jpg":[["background.004d778f.jpg","img/background.jpg"],"img/background.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./javascript/index");
@@ -288,7 +273,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63696" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50890" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

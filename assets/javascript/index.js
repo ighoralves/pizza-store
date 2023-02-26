@@ -1,2 +1,2 @@
-import "./search";
+// import "./search";
 import "./menuMobile";

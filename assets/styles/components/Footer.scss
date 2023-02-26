@@ -1,0 +1,35 @@
+.Footer {
+  background: red;
+  height: 100%;
+  width: 100%;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+
+  &-text {
+    font-size: 20px;
+    font-weight: 700;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &-text1 {
+    color: #fff;
+    font-size: 16px;
+  }
+
+  &-icons {
+    .uil {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+
+}
