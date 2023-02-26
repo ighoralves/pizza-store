@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+b,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.Container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0px 22px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.Header {
+  max-width: 100%;
+  height: 30px;
+  background: red;
+  padding: 30px 0px;
+}
+.Header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Header-content .toggle {
+  color: #fff;
+}
+.Header-logo {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.Header-logo a {
+  color: #fff;
+  text-decoration: none;
+}
+.Header .Menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.Header .Grid {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+.Header .Grid li {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.Header .Grid a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 450;
+}
+.Header .Grid a:hover {
+  border-bottom: 2px solid #fff;
+}
+.Header-icon_shopping .uil {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+}
+.Header .toggle {
+  display: none;
+}
+.Header .search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.Header .search-container .search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+}
+.Header .search-container .search-button i {
+  display: block;
+}
+.Header .search-container .uil {
+  color: #fff;
+  font-size: 26px;
+}
+.Header .search-container .search-input {
+  display: none;
+  position: absolute;
+  font-size: 16px;
+  border-radius: 8px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-70%);
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #fff;
+  z-index: 1;
+  transition: width 0.3s ease-out;
+}
+.Header .search-container .search-input.active {
+  display: block;
+  width: 350px;
+}
+.Header .search-container .search-input + .search-button {
+  margin-left: 5px;
+}
+.Header .search-container .search-input + .search-button i {
+  display: none;
+}
+@media (max-width: 800px) {
+  .Header .Menu {
+    display: none;
+  }
+  .Header .toggle {
+    cursor: pointer;
+    font-size: 28px;
+  }
+  .Header nav .uil-times {
+    position: relative;
+    right: 0;
+    display: black;
+    animation: animacao 0.5s linear;
+  }
+  @keyframes animacao {
+    from {
+      transform: translatey(-40px);
+    }
+    to {
+      transform: translatey(0);
+    }
+  }
+  .Header nav.show div.uil-times {
+    opacity: 1;
+    top: 0;
+    display: block;
+  }
+  .Header .uil-bars {
+    display: block;
+    animation: animacao 0.5s linear;
+  }
+  .Header nav.show .uil-bars {
+    display: none;
+  }
+  .Header nav.show .Menu {
+    background: red;
+    border-radius: 8px 0 0 8px;
+    display: block;
+    height: 400px;
+    padding: 60px 0;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 100%;
+  }
+  .Header nav.show .Menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Header nav.show ul.Grid {
+    gap: 4rem;
+  }
+  .Header .Mobile-menuMobile {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
