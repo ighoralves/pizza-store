@@ -1,5 +1,5 @@
 .Footer {
-  background: red;
+  background: #FF3333;
   height: 100%;
   width: 100%;
 
@@ -13,6 +13,7 @@
   &-text {
     font-size: 20px;
     font-weight: 700;
+    text-transform: capitalize;
 
     a {
       color: #fff;
@@ -26,9 +27,34 @@
   }
 
   &-icons {
+    
+
     .uil {
       color: #fff;
       font-size: 20px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &-content {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px 0px;
+      gap: 20px;
+    }
+  
+    &-text {
+      font-size: 20px;
+      font-weight: 700;
+      width: 100%;
+      text-align: center;
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
 
