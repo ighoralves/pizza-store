@@ -321,6 +321,9 @@ body {
   color: #fff;
   max-width: 800px;
   margin-bottom: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 5px;
 }
 .Banner .Link {
   text-decoration: none;
@@ -370,6 +373,60 @@ body {
 .Footer-icons .uil {
   color: #fff;
   font-size: 20px;
+}
+
+.Service {
+  height: 100%;
+  max-width: 100%;
+  margin-bottom: 100px;
+}
+.Service-text {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.Service-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 100px;
+}
+.Service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 300px;
+  height: 350px;
+  background: red;
+  border-radius: 8px;
+}
+.Service-text1 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.Service figure {
+  width: 200px;
+  margin: 0 auto;
+}
+.Service-img1 {
+  padding: 25px 0px 30px;
+}
+.Service-img2 {
+  padding: 10px 0px 20px;
+}
+.Service-text2 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

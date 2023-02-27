@@ -4,6 +4,7 @@
   background-position: center;
   background-size: cover;
   padding: 20px 0px;
+  // height: 1000px;
 
   .search-container {
     display: flex;
@@ -47,6 +48,10 @@
     color: #fff;
     max-width: 800px;
     margin-bottom: 30px;
+    background: rgba(#000, .7);
+    padding: 20px;
+    border-radius: 5px;
+
   }
 
   .Link {

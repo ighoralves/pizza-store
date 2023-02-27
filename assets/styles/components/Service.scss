@@ -1,0 +1,68 @@
+.Service {
+  height: 100%;
+  max-width: 100%;
+  margin-bottom: 100px; 
+
+  &-text {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  &-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 100px;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+    width: 300px ;
+    height: 350px;
+    background: red;
+    border-radius: 8px;
+  }
+
+  &-text1 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    // margin-top: 20px;
+    text-transform: capitalize;
+  }
+
+  figure {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  &-img1 {
+    padding: 25px 0px 30px;
+
+  }
+
+  &-img2 {
+    padding: 10px 0px 20px;
+
+  }
+
+  &-text2 {
+    color: #fff;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    
+  }
+
+}
