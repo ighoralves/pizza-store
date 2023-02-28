@@ -152,12 +152,22 @@ body {
   margin: 0;
 }
 
+.Tittle-great {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #FF3333;
+}
+
 .Header {
   position: fixed;
   width: 100%;
   height: 30px;
   background: #FF3333;
   padding: 30px 0px;
+  z-index: 999;
 }
 .Header-content {
   display: flex;
@@ -336,20 +346,11 @@ body {
   max-width: 100%;
   margin-bottom: 100px;
 }
-.Service-text {
-  margin-top: 100px;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: capitalize;
-  color: #FF3333;
-}
 .Service-cards {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
   margin-top: 100px;
 }
 .Service-card {
@@ -362,6 +363,9 @@ body {
   height: 350px;
   background: #FF3333;
   border-radius: 8px;
+}
+.Service-card:hover {
+  scale: 1.1;
 }
 .Service-text1 {
   color: #fff;
@@ -386,9 +390,60 @@ body {
   text-align: center;
 }
 
+.Food {
+  margin-bottom: 100px;
+}
+.Food-main {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 50px;
+}
 .Food-card {
-  width: 500px;
-  border: 1px solid #FF3333;
+  width: 300px;
+  border: 3px solid #FF3333;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.Food .Heart {
+  margin-left: 280px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.Food-image-pizza {
+  background: #fff;
+  border-radius: 5px;
+}
+.Food-star {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Food-name-pizza {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #394539;
+  margin-bottom: 10px;
+}
+.Food-ingredient-pizza {
+  color: #394539;
+  font-weight: 500;
+}
+.Food-btn {
+  width: 100%;
+  border: none;
+  background: #FF3333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 550;
+  text-transform: capitalize;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .Footer {

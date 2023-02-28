@@ -1,6 +1,65 @@
 .Food {
-  &-card {
-    width: 500px;
-    border: 1px solid #FF3333;
+  margin-bottom: 100px;
+
+  &-main {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 50px;
   }
+  
+  &-card {
+    width: 300px;
+    border: 3px solid #FF3333;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .Heart {
+    margin-left: 280px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  &-image-pizza {
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  &-star {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &-name-pizza {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #394539;
+    margin-bottom: 10px;
+  }
+  
+  &-ingredient-pizza {
+    color: #394539;
+    font-weight: 500;
+  }
+
+  &-btn {
+    width: 100%;
+    border: none;
+    background: #FF3333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 550;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+
 }
