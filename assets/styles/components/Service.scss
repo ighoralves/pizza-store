@@ -6,9 +6,10 @@
   &-cards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
+    gap: 20px;
   }
 
   &-card {
@@ -24,9 +25,9 @@
     background: #FF3333;
     border-radius: 8px;
 
-    &:hover {
-      scale: 1.1;
-    }
+    // &:hover {
+    //   scale: 1.1;
+    // }
   }
 
   &-text1 {

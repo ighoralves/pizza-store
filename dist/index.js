@@ -163,11 +163,25 @@ try {
 } finally {
   _iterator2.f();
 }
+},{}],"javascript/heart.js":[function(require,module,exports) {
+var heartIcons = document.querySelectorAll(".uil-heart");
+
+var _loop = function _loop(i) {
+  heartIcons[i].addEventListener("click", function () {
+    heartIcons[i].classList.toggle("active");
+  });
+};
+
+for (var i = 0; i < heartIcons.length; i++) {
+  _loop(i);
+}
 },{}],"javascript/index.js":[function(require,module,exports) {
 "use strict";
 
 require("./menuMobile");
-},{"./menuMobile":"javascript/menuMobile.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+
+require("./heart");
+},{"./menuMobile":"javascript/menuMobile.js","./heart":"javascript/heart.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -273,7 +287,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53181" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50469" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
