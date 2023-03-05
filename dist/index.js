@@ -163,6 +163,21 @@ try {
 } finally {
   _iterator2.f();
 }
+},{}],"javascript/swiper.js":[function(require,module,exports) {
+var swiper = new Swiper(".swiper-container", {
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination"
+  },
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
+});
 },{}],"javascript/heart.js":[function(require,module,exports) {
 var heartIcons = document.querySelectorAll(".uil-heart");
 
@@ -180,8 +195,10 @@ for (var i = 0; i < heartIcons.length; i++) {
 
 require("./menuMobile");
 
+require("./swiper");
+
 require("./heart");
-},{"./menuMobile":"javascript/menuMobile.js","./heart":"javascript/heart.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./menuMobile":"javascript/menuMobile.js","./swiper":"javascript/swiper.js","./heart":"javascript/heart.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -287,7 +304,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50469" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56976" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
