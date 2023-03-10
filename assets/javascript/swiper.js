@@ -1,14 +1,15 @@
-const swiper = new Swiper(".swiper-container", {
-  slidesPerView: 1,
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, Pagination } from "swiper";
+
+// configure Swiper to use modules
+Swiper.use([Navigation, Pagination]);
+
+var swiper = new Swiper(".mySwiper", {
+
+  slidesPerView: 2,
   pagination: {
     el: ".swiper-pagination",
-  },
-  mousewheel: true,
-  keyboard: true,
-  breakpoints: {
-    767: {
-      slidesPerView: 2,
-      setWrapperSize: true,
-    },
+    clickable: true,
   },
 });
+

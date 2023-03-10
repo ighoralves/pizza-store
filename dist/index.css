@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -451,6 +452,65 @@ body {
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+.Satisfaction {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.Satisfaction .swiper {
+  width: 100%;
+  height: 100%;
+}
+.Satisfaction .swiper-wrapper {
+  position: relative;
+  overflow: visible;
+  gap: 10px;
+  width: 100%;
+  margin-top: 50px;
+}
+.Satisfaction .swiper-slide {
+  padding: 10px;
+  font-size: 18px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  max-width: 540px;
+  gap: 20px;
+}
+.Satisfaction-img img {
+  border-radius: 50%;
+  background: red;
+  width: 200px;
+}
+.Satisfaction-text-cotent {
+  width: 100%;
+  height: 100%;
+}
+.Satisfaction-name {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.Satisfaction-paragraph-comment {
+  font-size: 16px;
+  line-height: 130%;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.Satisfaction-star {
+  width: 100%;
+  margin-left: auto;
+}
+.Satisfaction .swiper-pagination {
+  position: absolute;
+  bottom: 10px; /* definido o valor de distância em relação ao .swiper-wrapper */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .Footer {

@@ -1,0 +1,70 @@
+.Satisfaction {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-wrapper {
+    position: relative;
+    overflow: visible;
+    gap: 10px;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  .swiper-slide {
+    padding: 10px;
+    font-size: 18px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    max-width: 540px;
+    gap: 20px;
+  }
+  
+ &-img {
+   img {
+    border-radius: 50%;
+    // padding: 10px;
+    background: red;
+    width: 200px;
+  }
+ }
+
+ &-text-cotent {
+  width: 100%;
+  height: 100%;
+ }
+
+ &-name {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+ }
+
+ &-paragraph-comment {
+  font-size: 16px;
+  line-height: 130%;
+  max-width: 100%;
+  margin-bottom: 10px;
+ }
+
+ &-star {
+  width: 100%;
+  margin-left: auto;
+ }
+
+ .swiper-pagination {
+  position: absolute;
+  bottom: 10px; /* definido o valor de distância em relação ao .swiper-wrapper */
+  left: 50%;
+  transform: translateX(-50%);
+ }
+}
